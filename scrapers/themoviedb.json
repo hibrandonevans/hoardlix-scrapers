@@ -1,0 +1,149 @@
+{
+  "targetUrl": "https://www.themoviedb.org",
+  "targetOrigin": "https://www.themoviedb.org",
+  "records": [
+    {
+      "list": [
+        [
+          {
+            "data": {
+              "selector": ".search > form > label > input",
+              "type": "click"
+            },
+            "mode": "Record"
+          },
+          {
+            "data": {
+              "selector": ".search > form > label > input",
+              "type": "input"
+            },
+            "mode": "Record"
+          },
+          {
+            "data": {
+              "selector": ".search > form > input",
+              "type": "click"
+            },
+            "mode": "Record"
+          }
+        ]
+      ]
+    },
+    {
+      "list": [
+        [
+          {
+            "data": {
+              "selector": ".title > div > a",
+              "type": "click"
+            },
+            "mode": "Record"
+          }
+        ]
+      ]
+    },
+    {
+      "list": [
+        [
+          {
+            "data": {
+              "keyPaths": [
+                {
+                  "type": "object-key",
+                  "value": "cover"
+                },
+                {
+                  "type": "value"
+                }
+              ],
+              "selector": ".blurred > img",
+              "type": "src"
+            },
+            "mode": "Select"
+          },
+          {
+            "data": {
+              "keyPaths": [
+                {
+                  "type": "object-key",
+                  "value": "title"
+                },
+                {
+                  "type": "value"
+                }
+              ],
+              "selector": ".title > h2 > a",
+              "type": "text"
+            },
+            "mode": "Select"
+          },
+          {
+            "data": {
+              "keyPaths": [
+                {
+                  "type": "object-key",
+                  "value": "director"
+                },
+                {
+                  "type": "value"
+                }
+              ],
+              "selector": ".people > li:nth-of-type(1) > p:nth-of-type(1) > a",
+              "type": "text"
+            },
+            "mode": "Select"
+          },
+          {
+            "data": {
+              "keyPaths": [
+                {
+                  "type": "object-key",
+                  "value": "description"
+                },
+                {
+                  "type": "value"
+                }
+              ],
+              "selector": ".overview > p",
+              "type": "text"
+            },
+            "mode": "Select"
+          },
+          {
+            "data": {
+              "keyPaths": [
+                {
+                  "type": "object-key",
+                  "value": "releaseDate"
+                },
+                {
+                  "type": "value"
+                }
+              ],
+              "selector": ".facts > span:nth-of-type(2)",
+              "type": "text"
+            },
+            "mode": "Select"
+          },
+          {
+            "data": {
+              "keyPaths": [
+                {
+                  "type": "object-key",
+                  "value": "duration"
+                },
+                {
+                  "type": "value"
+                }
+              ],
+              "selector": ".facts > span:nth-of-type(4)",
+              "type": "text"
+            },
+            "mode": "Select"
+          }
+        ]
+      ]
+    }
+  ],
+  "initialDataType": "object"
+}
