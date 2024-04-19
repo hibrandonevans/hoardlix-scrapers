@@ -1,0 +1,13 @@
+.DS_Store           
+Thumbs.db          
+ehthumbs.db
+*.stackdump
+
+*.sublime-workspace
+*.sublime-project
+.vscode/             
+.idea/              
+*.swp               
+*.swo              
+
+*.log
